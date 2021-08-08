@@ -24,10 +24,10 @@ blocking of [Tor](https://www.torproject.org/).
 
 ## Tor test
 
-The **OONI Probe Tor test** provides an automated way of examining whether [Tor](https://www.torproject.org/)
-works in a tested network.
+The **OONI Probe Tor test** provides an automated way of examining whether some key infrastructure in the [Tor](https://www.torproject.org/)
+network works in a tested network.
 
-To this end, this [test](https://github.com/ooni/probe-engine) examines the reachability of a set of services that allow
+To this end, this [test](https://github.com/ooni/probe-engine) examines the reachability of a subset of services that allow
 Tor to work. These include the following services:
  
 * Tor directory authorities (used by Tor relays) 
@@ -54,7 +54,7 @@ is required for Tor directory authorities;
 If the test succeeds in performing all of the above, Tor may work on
 this network (unless if it's blocked in ways that aren't being measured).
 
-**If the test fails in performing any of the above, Tor does not work in the
-tested network and may be blocked.**
+**If the test fails in performing any of the above, there may be an attempt to block Tor in the
+tested network, but Tor may still work for some users.**
 
 Read the **[Tor test specification](https://github.com/ooni/spec/blob/master/nettests/ts-023-tor.md)**.
